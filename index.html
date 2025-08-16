@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A smart time management app with task tracking, Pomodoro timer, reminders, progress tracking, and dark mode — built using HTML, CSS, and JavaScript.">
+  <meta name="author" content="Isha">
+  <title>Time Management App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>⏳ Time Management App</h1>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- Task Input -->
+<section class="task-input">
+  <label for="taskInput">Task:</label>
+  <input type="text" id="taskInput" placeholder="Enter your task..." />
+
+  <label for="priority">Priority:</label>
+  <select id="priority">
+    <option value="low">Low Priority</option>
+    <option value="medium">Medium Priority</option>
+    <option value="high">High Priority</option>
+  </select>
+
+  <label for="category">Category:</label>
+  <select id="category">
+    <option value="work">Work</option>
+    <option value="study">Study</option>
+    <option value="personal">Personal</option>
+  </select>
+
+  <button id="addTask">Add Task</button>
+</section>
+
+
+  <!-- Progress Bar -->
+  <section class="progress">
+    <p>Daily Progress:</p>
+    <div class="progress-bar">
+      <div id="progressFill"></div>
+    </div>
+  </section>
+
+  <!-- Task List -->
+  <section>
+    <h2>Tasks</h2>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Pomodoro Timer -->
+  <section class="timer">
+    <h2>Pomodoro Timer</h2>
+    <p id="timerDisplay">25:00</p>
+    <button id="startTimer">Start</button>
+    <button id="resetTimer">Reset</button>
+  </section>
+
+  <audio id="reminderSound" src="reminder.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
