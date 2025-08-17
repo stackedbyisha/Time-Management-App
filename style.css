@@ -77,7 +77,7 @@ header h1 {
 #progressFill {
   height: 100%;
   width: 0;
-  background: #e646a3;
+  background: #28a745;
   transition: width 0.3s;
 }
 
